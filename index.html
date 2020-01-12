@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>What's the Weather?</title>
+  </head>
+  <body>
+    <header>
+      <h1>What's the Weather?</h1>
+    </header>
+    <main>
+      <div class="instructions">
+        <h2>Enter a city to see the weather</h2>
+      </div>
+      <form id="search-form">
+        <input type="text" id="city-search" name="city-search" placeholder="City Name">
+        <button type="submit" id="search-button" name="search-button">Search</button>
+      </form>
+      <div id="results-container">
+        <div id="city-container">
+          <h3 id="city"></h3>
+        </div>
+        <div id="temp-container">
+          <h3 id="temp-title">Temperature</h3>
+          <h4 id="temperature"></h4>
+          <div class="feels-like-container">
+            <h4>Feels Like: </h4>
+            <h4 id="feels-like"></h4>
+          </div>
+        </div>
+        <div class="conditions-container">
+          <div class="condition">
+            <h5 class="alt-temp">High</h5>
+            <h5 class="alt-temp" id="high-temp"></h5>
+          </div>
+          <div class="condition">
+            <img id="weather-icon" src="" alt="weather icon">
+            <h5 id="condition-description"></h5>
+          </div>
+          <div class="condition">
+            <h5 class="alt-temp">Low</h5>
+            <h5 class="alt-temp" id="low-temp"></h5>
+          </div>
+        </div>
+        <button type="button" id="search-again" name="search-again">Search Another Location</button>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+  <!-- <footer>All data used from OpenWeatherMap.com</footer> -->
+</html>
